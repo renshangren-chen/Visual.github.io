@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/index.css">
+
+    <!-- 地图 -->
+    <link href="css/chunk-7305b8f4.b1341d14.css" rel="prefetch">
+    <link href="js/chunk-7305b8f4.daf3c850.js" rel="prefetch">
+    <link href="css/chunk-vendors.a0d11cda.css" rel="preload" as="style">
+    <link href="js/app.cd09a435.js" rel="preload" as="script">
+    <link href="js/chunk-vendors.e52e50e8.js" rel="preload" as="script">
+    <link href="css/chunk-vendors.a0d11cda.css" rel="stylesheet">
+
+    <!-- 引入 ECharts -->
+    <script src="https://cdn.jsdelivr.net/npm/echarts@5.2.1/dist/echarts.min.js"></script>
+
+    <!-- 引入 Baidu Map 扩展组件 -->
+    <script src="https://cdn.jsdelivr.net/npm/echarts@5.2.1/dist/extension/bmap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
+    <!-- 按钮样式 -->
+    <link rel="stylesheet" href="css/buttonstyle.css">
+
+
+    <!-- 左右滑动插件 -->
+
+    <!-- <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script> -->
+    <script src="https://cdn.staticfile.org/popper.js/1.15.0/umd/popper.min.js"></script>
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap-grid.min.css">
+
+    <link rel="stylesheet" href="css/lunbo.css">
+
+    <link rel="stylesheet" href="css/gundongTEXT.css">
+
+    <!-- 词云依赖插件 -->
+    <script src="./js/echarts-wordcloud.min.js"></script>
+
+    <style>
+        .switch-btns {
+            position: absolute;
+            bottom: -20%;
+            transform: translateY(-50%);
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+        }
+
+        .switch-btnx {
+
+            cursor: pointer;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="header">
+        <div class="showTime">123123</div>
+        <h1>推动乡村振兴——三农问题可视化分析平台 </h1>
+        <div class="hrefgo"><a href="./frist/index.html">首页 | </a><a href="./index.html">可视化分析平台 | </a>
+            <a href="./indexSingle.html">政策与指标画像 | </a>
+            <a href="./indexTow.html">三农词云及其概览</a>
+        </div>
+    </div>
+    <!-- <div class="panel pie1">
+                <h2>三农热点词云</h2>
+                <div class="chart">图表</div>
+                <div class="panel-footer"></div>
+            </div> -->
+    <!-- 页面主题部分 -->
+    <div id="mainbox">
+        <div class="column">
+            <div class="paneltwo">
+                <div class="zuotu1">
+                    <h2>三农热点词云</h2>
+                    <div class="chart">图表</div>
+                    <div class="panel-footer"></div>
+                </div>
+                <div class="youtu1">
+                    <!-- <h2>三农问题概览</h2> -->
+                    <div class="chart">图表</div>
+                    <div class="panel-footer"></div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</body>
+<script src="./js/flexible.js"></script>
+<!-- <script src="./js/echarts.min.js"></script> -->
+<!-- <script src="js/jquery.js"></script> -->
+<script src="./js/indexTwo.js"></script>
+<!-- <script src="./js/china.js"></script>
+<script src="./js/myMap.js"></script>
+<script src="./js/OurMap.js"></script>
+<script src="./js/control.js"></script> -->
+
+
+<script>
+    var t = null
+    t = setTimeout(time, 1000)
+    function time() {
+        clearInterval(t)//清楚定时器
+        dt = new Date()
+        var y = dt.getFullYear()
+        var mt = dt.getMonth() + 1
+        var day = dt.getDate()
+        var h = dt.getHours()
+        var m = dt.getMinutes()
+        var s = dt.getSeconds()
+        document.querySelector(".showTime").innerHTML = '当前时间:' + y + '年' + mt + '月' + day
+            + '日' + '-' + h + '时' + m + '分' + s + '秒'
+        t = setTimeout(time, 1000)//设定定时器，循环运行
+    }
+</script>
+
+
+
+
+
+
+
+</html>

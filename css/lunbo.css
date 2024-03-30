@@ -1,0 +1,35 @@
+/* .switch-left{
+    margin-left: 30px;
+    width: 100px;
+    height: 30px;
+    line-height: 0px;
+    background-color: #316bf2;
+    font-weight:800;
+    
+}
+
+.switch-right{
+    margin-right: 30px;
+    width: 100px;
+    height: 30px;
+    line-height: 0px;
+    background-color: #316bf2;
+    font-weight:800;
+} */
+
+.switch{
+    margin-right: 30px;
+    width: 100px;
+    height: 30px;
+    line-height: 0px;
+    background-color: #316bf2;
+    font-weight:800;
+}
+
+.switch2{
+    background-color: #0c2d6c;
+}
+
+#demoh a:hover{
+    cursor: pointer;
+}
